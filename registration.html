@@ -9,7 +9,50 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.goggleapis.com/css2?family=Poppins:font-wght@500&display=swap" rel="stylesheet">
         <style>
-            
+            form{
+                width: fit-content;
+            }
+            label{
+                color:black;
+                font-size: large;
+                font-family:Arial, Helvetica, sans-serif;
+
+                
+            }
+            input[type="text"]{
+                color:crimson;
+                background-color: bisque;
+                width: 160px;
+                text-transform: capitalize;
+                border-radius: 10px;
+            }
+            h3{
+                text-shadow: 8px 8px 5px rebeccapurple;
+                text-align: left;
+                
+
+            }
+            input[type="number"]{
+                color: black;
+                width: 160px;
+                text-transform:none;
+                border-radius: 10px;
+            }
+            table{
+                background-color: lightsalmon;
+                font-size: 24px;
+                font-style: normal;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                border-collapse: collapse;
+                border-style: dashed;
+            }
+           
+          /*  input[type="Submit"],  input[type="Reset"]{
+                width: 5px;
+                padding: 8px 12px;
+               margin:  5px 0;
+                box-sizing: border-box;
+           }*/
         </style>
 </head>
 <body>
@@ -90,44 +133,54 @@
                     </select>
                     </td>
             </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    Male<input type="radio" name="Gender" value="Male" />
+                    Female<input type="radio" name="Gender"value="Female" />
+                </td>
+            </tr>
 
-            
-           <tr>
-            <td><label for="Gender">Gender</label></td>
-            <td><input type="radio"  name="Female">Female</td>
-            <td><input type="radio"  name="Male">Male</td>
-            <td><input type="radio"  name="Other">Other</td>
-       </tr>
-
-         
-       <tr>
-        <td><label for="Training">Training</label></td>
-        <td><input type="radio"  name="HTML">HTML</td>
-        <td><input type="radio"  name="CSS">CSS</td>
-        <td><input type="radio"  name="Angular">Angular</td>
-   </tr>
+     <tr>
+        <td>Training</td>
+                <td>
+                    HTML<input type="radio" name="Training" value="HTML" />
+                    CSS<input type="radio" name="Training"value="CSS" />
+                    Angular<input type="radio" name="Training" value="Angular" />
+                </td>
+            </tr>
+        
+       
+   
 
    <tr>
-    <td><label></label></td>
+    <td><label for="address">Permant Address</label></td>
+    <td><input type="address" name="address" id="address">
+  </td>
    </tr>
 
 
+<tr>
+    <td colspan="2"align="center">
+   <input type="Submit" value="submit">
+    <input type="Reset" value="Reset">
+    </td>
+</tr>
+</table>
 
-
-
-            
-
-            
-
-            
-
-
-                
-                
-
-
-            </body>
-        </table>
-    </fieldset>
-    
 </form>
+
+</body>
+</html>
+            
+
+            
+
+            
+
+
+                
+                
+
+
+            
